@@ -64,7 +64,7 @@ body {
 }
 
 .about {
-  margin-top: 200px;
+  margin-top: 250px;
 }
 
 .about-me {
@@ -77,7 +77,8 @@ body {
 }
 
 .about-info h1 {
-  font-weight: 100;
+  font-family: "Gilroy";
+  font-weight: 400;
   color: #fff;
 }
 
@@ -93,7 +94,7 @@ body {
   mix-blend-mode: normal;
   border-radius: 12px;
   text-decoration: none;
-  padding: 13px 24px;
+  padding: 13px 26px;
   margin-right: 14px;
 }
 
@@ -126,9 +127,31 @@ h3 .text-wrapper:nth-of-type(2) .text {
     transform: translateX(0%);
   }
 }
+
 .project {
-  margin-top: 150px;
+  margin-top: 250px;
   margin-bottom: 100px;
+}
+
+.project__block {
+  background: #2a2a2a6e;
+  transition: 0.5s;
+  text-align: center;
+  border-radius: 32px;
+  padding: 20px;
+  margin: 15px;
+}
+
+.web-btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  background: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;  
+  color: rgba(0, 0, 0, 0.87);
+  margin-right: 8px;
 }
 
 .project-title {
@@ -151,17 +174,17 @@ h3 .text-wrapper:nth-of-type(2) .text {
 }
 
 .project-block {
-  margin-bottom: 50px;
+  padding: 10px;
+  text-align: left;
   text-decoration: none;
 }
 
 .project-photo {
-  width: 400px;
+  width: 300px;
   border-radius: 5px;
-  transition: 0.5s;
 }
 
-.project-photo:hover {
+.project__block:hover {
   transform: scale(1.1); /* Увеличиваем масштаб */
 }
 
@@ -169,12 +192,19 @@ h3 .text-wrapper:nth-of-type(2) .text {
   margin-top: 10px;
 }
 
-.project-info p {
+.site-name {
   font-family: "Gilroy-Medium";
-  font-size: 19px;
   font-weight: 500;
-  margin-top: 15px;
+  font-size: 20px;
+  margin-bottom: 10px;
   color: #fff;
+}
+
+.site-info {
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  color: #aeaeae;
+  margin-bottom: 10px;
 }
 
 .project-list {
@@ -203,34 +233,6 @@ h3 .text-wrapper:nth-of-type(2) .text {
   color: #000;
   background-color: #808080;
   transition: all 0.5s;
-}
-
-.skill-block {
-  margin-bottom: 70px;
-}
-
-.title-skill {
-  text-align: center;
-  margin-bottom: 70px;
-  font-family: "Gilroy";
-}
-
-.skill-photo {
-  width: 300px;
-  margin-left: 200px;
-}
-
-.progress-name {
-  font-family: "Gilroy";
-  font-size: 18px;
-}
-
-.progress {
-  margin-bottom: 50px;
-}
-
-.progress-bar {
-  background-color: rgba(53, 251, 53, 0.646);
 }
 
 footer {
@@ -280,6 +282,12 @@ footer {
   transform: translateY(0%);
 }
 
+@media (max-width: 1200px) {
+  .project-block {
+    text-align: center;
+  }
+}
+
 @media (max-width: 992px) {
   .skill-photo {
     width: 250px;
@@ -287,12 +295,6 @@ footer {
   }
 
   .photo {
-    text-align: center;
-  }
-
-  .progress-block {
-    margin-left: 100px;
-    margin-right: 100px;
     text-align: center;
   }
 }
@@ -311,4 +313,12 @@ footer {
   .project-photo {
     width: 300px;
   }
+
+  .project__block {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
+
+
+

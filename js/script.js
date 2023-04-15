@@ -15,6 +15,3 @@ function onEntry(entry) {
     observer.observe(elm);
   }
 
-
-
-  
