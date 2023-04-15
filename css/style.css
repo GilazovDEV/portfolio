@@ -43,7 +43,6 @@
 body {
   background-color: #000;
   color: #fff;
-  cursor: url('../pict/mouse-cursor.png'), auto;
 }
 
 .text-gray {
@@ -54,20 +53,12 @@ body {
 .about-link {
   font-family: "Gilroy";
   font-weight: 300;
-  color: #00ff73;
-  background-image: linear-gradient(
-    90deg,
-    rgba(79, 224, 66, 1) 0%,
-    rgba(0, 255, 115, 1) 100%
-  );
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: #FF08AB;
   text-decoration: none;
 }
 
 .about-link:hover {
-  color: #00ff73;
+  color: #FC50B7;
   text-decoration: underline;
   transition: all 0.5s;
 }
@@ -85,12 +76,37 @@ body {
   transform: translateX(50%);
 }
 
-.about-info {
+.about-info h1 {
+  font-weight: 100;
   color: #fff;
 }
 
+.about__btn {
+  padding-top: 24px;
+}
+
+.btn-hi {
+  font-family: "Gilroy";
+  font-weight: 400;
+  color: #fff;
+  background: #2A2A2A;
+  mix-blend-mode: normal;
+  border-radius: 12px;
+  text-decoration: none;
+  padding: 13px 24px;
+  margin-right: 14px;
+}
+
+.btn-works {
+  font-family: "Gilroy";
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 14px;
+}
+
 .chel {
-  margin-top: -20px;
+  margin-top: -50px;
 }
 
 h3 .text-wrapper:nth-of-type(1) .text {
@@ -174,12 +190,12 @@ h3 .text-wrapper:nth-of-type(2) .text {
 
 .project-link a {
   text-decoration: none;
-  color: #808080;
+  color: #FC50B7;
 }
 
 .project-link a:hover {
   text-decoration: underline;
-  color: #333;
+  color: #FF08AB;
   transition: all 0.5s;
 }
 
