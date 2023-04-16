@@ -154,6 +154,10 @@ h3 .text-wrapper:nth-of-type(2) .text {
   margin-right: 8px;
 }
 
+.project-title h1 {
+  margin: 0px;
+}
+
 .project-title {
   font-family: "Gilroy";
   font-weight: 500;
@@ -189,7 +193,6 @@ h3 .text-wrapper:nth-of-type(2) .text {
 }
 
 .project-info {
-  margin-top: 10px;
 }
 
 .site-name {
@@ -204,16 +207,16 @@ h3 .text-wrapper:nth-of-type(2) .text {
   font-family: "Gilroy-Medium";
   font-size: 18px;
   color: #aeaeae;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .project-list {
-  margin-top: 50px;
+  margin-top: 5px;
   text-align: center;
 }
 
 .project-link {
-  font-size: 28px;
+  font-size: 14px;
   font-family: "Gilroy";
   font-weight: 500;
 }
@@ -235,37 +238,107 @@ h3 .text-wrapper:nth-of-type(2) .text {
   transition: all 0.5s;
 }
 
-footer {
-  position: absolute;
-  width: 100%;
-  min-height: 70px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  background-color: rgb(28, 28, 28);
+/* mail */
+
+.mail {
+  margin-top: 200px;
 }
 
-.footer-link {
-  text-decoration: none;
-  color: #808080;
+.mail__block {
+  
 }
 
-.footer-link:hover {
-  color: #fff;
-  transition: all 0.5s;
-}
-
-.dev {
-  margin-top: 15px;
+.mail-title {
   margin-bottom: 10px;
+  padding: 0px;
 }
 
-.dev a {
+.m-tit {
+  font-family: 'Gilroy-Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mail-text {
+
+}
+
+.m-txt {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  margin: 0px;
+}
+
+.line {
+  text-decoration: underline;
+}
+
+.mail-input {
+
+}
+
+
+.mail-img {
+  margin-top: 25px;
+  margin-left: 300px;
+}
+
+footer {
+  padding-bottom: 10px;
+  margin-top: 200px;
+}
+
+.footer__block {
+
+}
+
+.f-y {
+  padding: 0px;
+  margin: 0px;
+}
+
+.f-a {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #808080;
   text-decoration: none;
-  color: #4cf846;
-  background-image: linear-gradient(to right, #4fe042, #00ff73);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 20px;
+  margin-left: 20px;
+  transition: all 0.3s;
+}
+
+.f-a:hover {
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.back {
+  color: #fff;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  justify-content: right;
+  padding: 0px;
+  margin: 0px;
+  transition: all 0.3s;
+}
+
+.back:hover {
+  color: #808080;
+  transition: all 0.3s;
 }
 
 /* animation */
@@ -309,6 +382,38 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+
+  .m-tit {
+    font-size: 32px;
+  }
+
+  .mail__pict {
+    display: none;
+  }
+
+    .back {
+      display: block;
+      margin-top: 10px;
+    }
+
+.ff {
+  text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .f-a {
+    text-align: center;
+    margin: 5px;
+  }
+
+  .f-y {
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 420px) {
   .project-photo {
     width: 300px;
@@ -317,6 +422,14 @@ footer {
   .project__block {
     margin-right: 0px;
     margin-left: 0px;
+  }
+
+  .m-tit {
+    font-size: 28px;
+  }
+
+  .m-txt {
+    font-size: 18px;
   }
 }
 
