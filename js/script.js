@@ -15,3 +15,6 @@ function onEntry(entry) {
     observer.observe(elm);
   }
 
+document.getElementById("confetti-button").addEventListener("click", function() {
+  confetti();
+});

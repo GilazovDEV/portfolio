@@ -96,6 +96,7 @@ body {
   text-decoration: none;
   padding: 13px 26px;
   margin-right: 14px;
+  border: none;
 }
 
 .btn-works {
@@ -278,6 +279,12 @@ h3 .text-wrapper:nth-of-type(2) .text {
 
 .line {
   text-decoration: underline;
+  transition: all 0.3s;
+}
+
+.line:hover {
+  color: #4A9CED;
+  transition: all 0.3s;
 }
 
 .mail-input {
@@ -287,11 +294,11 @@ h3 .text-wrapper:nth-of-type(2) .text {
 
 .mail-img {
   margin-top: 25px;
-  margin-left: 300px;
+  margin-left: 350px;
 }
 
 footer {
-  padding-bottom: 10px;
+  padding-bottom: 25px;
   margin-top: 200px;
 }
 
@@ -415,6 +422,11 @@ footer {
 }
 
 @media (max-width: 420px) {
+  
+  .about {
+    margin-top: 150px;
+  }
+  
   .project-photo {
     width: 300px;
   }
@@ -425,7 +437,11 @@ footer {
   }
 
   .m-tit {
-    font-size: 28px;
+    font-size: 32px;
+  }
+
+  .project-title h1 {
+    font-size: 32px;
   }
 
   .m-txt {
