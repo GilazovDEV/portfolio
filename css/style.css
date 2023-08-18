@@ -53,12 +53,12 @@ body {
 .about-link {
   font-family: "Gilroy";
   font-weight: 300;
-  color: #FF08AB;
+  color: #ff08ab;
   text-decoration: none;
 }
 
 .about-link:hover {
-  color: #FC50B7;
+  color: #fc50b7;
   text-decoration: underline;
   transition: all 0.5s;
 }
@@ -90,13 +90,20 @@ body {
   font-family: "Gilroy";
   font-weight: 400;
   color: #fff;
-  background: #2A2A2A;
+  background: #2a2a2a;
   mix-blend-mode: normal;
   border-radius: 12px;
   text-decoration: none;
   padding: 13px 26px;
   margin-right: 14px;
   border: none;
+  transition: all 0.3s;
+}
+
+.btn-hi:hover {
+  background-color: #333;
+  color: #fff;
+  transition: all 0.3s;
 }
 
 .btn-works {
@@ -105,6 +112,12 @@ body {
   color: #fff;
   text-decoration: none;
   margin-left: 14px;
+  transition: all 0.3s;
+}
+
+.btn-works:hover {
+  color: #a3a3a3;
+  transition: all 0.3s;
 }
 
 .chel {
@@ -138,9 +151,8 @@ h3 .text-wrapper:nth-of-type(2) .text {
   background: #2a2a2a6e;
   transition: 0.5s;
   text-align: center;
-  border-radius: 32px;
+  border-radius: 23px;
   padding: 20px;
-  margin: 15px;
 }
 
 .web-btn {
@@ -150,19 +162,19 @@ h3 .text-wrapper:nth-of-type(2) .text {
   background: #fff;
   padding: 6px 12px;
   border: none;
-  border-radius: 8px;  
+  border-radius: 8px;
   color: rgba(0, 0, 0, 0.87);
   margin-right: 8px;
 }
 
 .project-title h1 {
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 48px;
   margin: 0px;
 }
 
 .project-title {
-  font-family: "Gilroy";
-  font-weight: 500;
-  font-size: 48px;
   margin-bottom: 50px;
   animation: slideBottom 1.2s forwards;
   transform: translateX(50%);
@@ -213,7 +225,7 @@ h3 .text-wrapper:nth-of-type(2) .text {
 
 .project-list {
   margin-top: 5px;
-  text-align: center;
+  text-align: left;
 }
 
 .project-link {
@@ -224,12 +236,12 @@ h3 .text-wrapper:nth-of-type(2) .text {
 
 .project-link a {
   text-decoration: none;
-  color: #FC50B7;
+  color: #fc50b7;
 }
 
 .project-link a:hover {
   text-decoration: underline;
-  color: #FF08AB;
+  color: #ff08ab;
   transition: all 0.5s;
 }
 
@@ -246,7 +258,6 @@ h3 .text-wrapper:nth-of-type(2) .text {
 }
 
 .mail__block {
-  
 }
 
 .mail-title {
@@ -255,7 +266,7 @@ h3 .text-wrapper:nth-of-type(2) .text {
 }
 
 .m-tit {
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -265,11 +276,10 @@ h3 .text-wrapper:nth-of-type(2) .text {
 }
 
 .mail-text {
-
 }
 
 .m-txt {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -277,24 +287,21 @@ h3 .text-wrapper:nth-of-type(2) .text {
   margin: 0px;
 }
 
+
 .line {
+  color: #fff;
   text-decoration: underline;
   transition: all 0.3s;
 }
 
 .line:hover {
-  color: #4A9CED;
+  color: #4a9ced;
   transition: all 0.3s;
 }
 
-.mail-input {
-
-}
-
-
 .mail-img {
   margin-top: 25px;
-  margin-left: 350px;
+  margin-left: 400px;
 }
 
 footer {
@@ -303,7 +310,6 @@ footer {
 }
 
 .footer__block {
-
 }
 
 .f-y {
@@ -312,7 +318,7 @@ footer {
 }
 
 .f-a {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -332,7 +338,7 @@ footer {
 
 .back {
   color: #fff;
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
@@ -366,6 +372,10 @@ footer {
   .project-block {
     text-align: center;
   }
+
+  .project__block {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -390,7 +400,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-
   .m-tit {
     font-size: 32px;
   }
@@ -399,13 +408,13 @@ footer {
     display: none;
   }
 
-    .back {
-      display: block;
-      margin-top: 10px;
-    }
+  .back {
+    display: block;
+    margin-top: 10px;
+  }
 
-.ff {
-  text-align: center;
+  .ff {
+    text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -422,11 +431,10 @@ footer {
 }
 
 @media (max-width: 420px) {
-  
   .about {
     margin-top: 150px;
   }
-  
+
   .project-photo {
     width: 300px;
   }
@@ -448,6 +456,3 @@ footer {
     font-size: 18px;
   }
 }
-
-
-

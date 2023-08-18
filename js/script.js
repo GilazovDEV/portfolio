@@ -18,3 +18,14 @@ function onEntry(entry) {
 document.getElementById("confetti-button").addEventListener("click", function() {
   confetti();
 });
+
+const img = document.querySelector('img');
+const infoBlock = document.querySelector('.info-block');
+
+img.addEventListener('mouseover', () => {
+  infoBlock.style.opacity = 1;
+});
+
+img.addEventListener('mouseout', () => {
+  infoBlock.style.opacity = 0;
+});
